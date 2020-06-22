@@ -7,23 +7,37 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0005_hgytytyt'),
+        ("home", "0005_hgytytyt"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='hgytytyt',
-            name='dfgfg',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='hgytytyt_dfgfg', to='home.CustomText'),
+            model_name="hgytytyt",
+            name="dfgfg",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="hgytytyt_dfgfg",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='hgytytyt',
-            name='dfgsdfgs',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='hgytytyt_dfgsdfgs', to='home.CustomText'),
+            model_name="hgytytyt",
+            name="dfgsdfgs",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="hgytytyt_dfgsdfgs",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='hgytytyt',
-            name='sadwdd',
-            field=models.ManyToManyField(blank=True, related_name='hgytytyt_sadwdd', to='home.CustomText'),
+            model_name="hgytytyt",
+            name="sadwdd",
+            field=models.ManyToManyField(
+                blank=True, related_name="hgytytyt_sadwdd", to="home.CustomText"
+            ),
         ),
     ]

@@ -36,20 +36,3 @@ class HomePage(models.Model):
 class HGytytyt(models.Model):
     "Generated Model"
     kjhljhg = models.BigIntegerField()
-    dfgsdfgs = models.ForeignKey(
-        "home.CustomText",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="hgytytyt_dfgsdfgs",
-    )
-    sadwdd = models.ManyToManyField(
-        "home.CustomText", blank=True, related_name="hgytytyt_sadwdd",
-    )
-    dfgfg = models.OneToOneField(
-        "home.CustomText",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="hgytytyt_dfgfg",
-    )
